@@ -14,6 +14,7 @@
 	<form method="post" action="">
 		<h1>payment form</h1>
 		<p>required dields are followed by<strong><abbr title="required">*</abbr></strong>.</p>
+		<!--contact information联系人信息-->
 		<section>
 			<h2>Contact information</h2>
 			<fieldset>
@@ -51,6 +52,27 @@
 					<strong><abbr title="required">*</abbr></strong>
 				</label>
 				<input type="password" name="password" id="pwd">
+			</p>
+		</section>
+		<!--Payment Information支付信息-->
+		<section>
+			<h2>Payment Information</h2>
+			<p>
+				<label for="card">
+					<span>Card type:</span>
+				</label>
+				<select id="card" name="usercard">
+					<option value="visa">Visa</option>
+					<option value="mc">Mastercard</option>
+					<option value="amex">American express</option>
+				</select>
+			</p>
+			<p>
+				<label for="number">
+					<span>Card number:</span>
+					<strong><abbr title="required">*</abbr></strong>
+				</label>
+				<input type="number" name="cardnumber" id="number">
 			</p>
 		</section>
 	</form>
