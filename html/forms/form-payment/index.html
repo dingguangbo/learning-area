@@ -6,7 +6,7 @@
   <meta name="Author" content="">
   <meta name="Keywords" content="">
   <meta name="Description" content="">
-  <title>Document</title>
+  <title>My test page</title>
   <link rel="stylesheet" href="payment-form.css">
  </head>
  <body>
@@ -74,7 +74,16 @@
 				</label>
 				<input type="number" name="cardnumber" id="number">
 			</p>
+			<p>
+				<label for="date">
+					<span>Expiration date：</span>
+					<strong><abbr title="required">*</abbr></strong>
+					<em>formatted as mm/yy</em>
+				</label>
+				<input type="date" name="expiration" id="date">
+			</p>
 		</section>
+		<p><button type="submit">Validate the payment</button></p>
 	</form>
  </body>
 </html>
