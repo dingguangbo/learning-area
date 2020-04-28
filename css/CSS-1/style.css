@@ -1,0 +1,39 @@
+h1 + p{
+	font-size: 200%;
+}
+li{
+	list-style-type:square;
+}
+li.special{
+	color: orange;
+	font-weight: bold;
+}
+li em{
+	color:purple;
+}
+span.special{
+	color:red;
+}
+a:link{
+	color: ;
+}
+a:visited{
+	color: green;
+}
+a:hover{
+	text-decoration: none;
+}
+body h1 + p .special{
+	color: yellow;
+	background-color: black;
+	padding: 5px;
+}
+body {
+  background-color: pink;
+}
+
+@media (min-width: 30em) {
+  body {
+    background-color: blue;
+  }
+}
