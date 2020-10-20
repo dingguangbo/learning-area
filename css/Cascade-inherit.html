@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>层叠样式cascade-继承</title>
+  <style>
+		body {
+				color: green;
+				border:4px solid red;
+		}
+		.my-class-1 a{
+				color:inherit;	/*开启继承*/
+		}
+		.my-class-2 a{
+				color:initial; /*表示初始值。即设置属性值和浏览器默认样式相同。如果浏览器默认样式中未设置且该属性是自然继承的，那么会设置为 inherit 。*/
+		}
+		.my-class-3 a{
+				color:unset; /*相当于不设置值，默认可继承的继承，不可继承的保持默认值*/
+		}
+		a{
+				color:red;
+		}
+		blockquote{
+				background-color:black;
+				border:5px solid yellow;
+		}
+		.fix-this{
+				color:blue;
+				all:unset;
+				/*
+				initial该元素所有的属性都取默认值（即初始值）/
+				inherit其值，继承父元素的的属性。/
+				unset所有属性都相当于不设置值，默认可继承的继承，不可继承的保持默认值。
+				*/
+		}
+  </style>
+ </head>
+ <body>
+	<ul>
+		<li>Default <a href="#">link</a> color</li>
+		<li class="my-class-1">Inherit the <a href="#">link</a> color</li>
+		<li class="my-class-2">Reset the <a href="#">link</a> color</li>
+		<li class="my-class-3">Unset the <a href="#">link</a> color</li>
+	</ul>
+    <hr />
+	<blockquote><p>This blockquote is styled</p></blockquote>
+	<blockquote class="fix-this"><p>This blockquote is not styled</p></blockquote>
+ </body>
+</html>
