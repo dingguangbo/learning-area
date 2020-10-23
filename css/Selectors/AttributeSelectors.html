@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>属性选择器</title>
+		<style>
+			li[class]{/*匹配任何有class属性的选择器*/
+				font-size:200%;
+			}
+			li[class="a"]{/*匹配带有一个a类的选择器，不过不会选中一部分值为a而另一部分是另一个用空格隔开的值的类*/
+				background-color:yellow;
+			}
+			li[class~="a"]{/*会匹配一个a类，不过也可以匹配一列用空格分开、包含a类的值*/
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Attribute presence and value selectors属性存在和值选择器</h1>
+		<ul>
+			<li>Item 1项目1</li>
+			<li class="a">Item 2项目2</li>
+			<li class="a b">Item 3项目3</li>
+			<li class="ab">Item 4项目4</li>
+		</ul>
+	</body>
+</html>
