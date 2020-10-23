@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>case-insensitivity不区分大小写</title>
+  <style>
+	li[class^="a"]{
+		background-color:yellow; /*匹配一个开头为a的值*/
+	}
+	li[class^="a" i]{
+		color:red;				/*使用了大小写不敏感的标记,于是匹配了所有项*/
+	}
+  </style>
+ </head>
+ <body>
+	<h1>Case-insensitivity不区分大小写</h1>
+	<ul>
+		<li class="a">Item 1</li>
+		<li class="A">Item 2</li>
+		<li class="Ab">Item 3</li>
+	</ul>
+ </body>
+</html>
