@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>子字符串匹配选择器</title>
+	<style>
+		li[class^="a"]{/*匹配一个开头为a的值*/
+			font-size:200%;
+		}
+		li[class$="a"]{/*匹配了任何值结尾为a的属性*/
+			background-color:yellow;
+		}
+		li[class*="a"]{/*匹配了任何值的字符串中出现了a的属性，于是匹配了所有项。*/
+			color:red;
+		}
+	</style>
+ </head>
+ <body>
+	<h1>Attribute substring matching selectors子字符串匹配选择器</h1>
+	<ul>
+		<li class="a">Item 1</li>
+		<li class="ab">Item 2</li>
+		<li class="bca">Item 3</li>
+		<li class="bcabc">Item 4</li>
+	</ul>
+    
+ </body>
+</html>
