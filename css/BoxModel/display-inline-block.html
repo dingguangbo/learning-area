@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>使用display: inline-block</title>
+  <style>
+	span {
+	  margin: 20px;
+	  padding: 20px;
+	  width: 80px;
+	  height: 50px;
+	  background-color: lightblue;
+	  border: 2px solid blue;
+	  display: inline-block;/*表示内联和块级之间提供了一个中间状态,不会切换到新行，而且它可以对元素设定宽度和高度、padding、margin以及border会推开其他元素*/
+	}
+	.links-list{
+		border:1px solid black;
+	}
+	.links-list a{
+		background-color: rgb(179,57,81);
+		color: #fff;
+		text-decoration: none;
+		padding: 1em 2em;
+		display: inline-block;/*介于内联和块之间的中间状态，只有设置了该属性，a元素内边距才会生效，且推开其他元素*/
+	}
+	.links-list a:hover{
+		background-color: rgb(66, 28, 40);
+		color: #fff;
+	}
+	.links-list li{
+		list-style-type: none;
+		display: inline-flex;/*元素的外面创建一个内联框*/
+	}
+  </style>
+ </head>
+ <body>
+		<p>
+			I am a paragraph and this is a <span>span</span> inside that paragraph. A span is an inline element and so does not respect width and height.
+		</p>
+		<nav>
+		  <ul class="links-list">
+			<li><a href="">Link one</a></li>
+			<li><a href="">Link two</a></li>
+			<li><a href="">Link three</a></li>
+		  </ul>
+		</nav>    
+    
+ </body>
+</html>
