@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>margin外边距</title>
+  <style>
+  /*1、我们有两个段落。顶部段落的页 margin-bottom为50px。第二段的margin-top 为30px。因为外边距折叠的概念，所以框之间的实际外边距是50px，而不是两个外边距的总和。
+  2、您可以通过将第2段的 margin-top 设置为0来测试它。两个段落之间的可见边距不会改变——它保留了第一个段落 margin-bottom设置的50像素。*/
+  .container{
+  		margin:50px;
+		border:5px double purple;
+		width:409px;
+		height:300px;
+	}
+	.one{
+		border:5px solid purple;
+		width:400px;
+		height:50px;
+		margin-bottom: 50px;
+	}
+	.two{
+		border:5px solid purple;
+		width:400px;
+		height:50px;
+		margin-top: 0px;
+	}
+  </style>
+ </head>
+ <body>
+	<div class="container">
+	  
+	  <p class="one">I am paragraph one.</p>
+	  <p class="two">I am paragraph two.</p>
+	</div>
+    
+ </body>
+</html>
