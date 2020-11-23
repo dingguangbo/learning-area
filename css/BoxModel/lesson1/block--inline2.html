@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>box_model</title>
+  <style>
+	p,ul{
+	  border: 2px solid purple; 
+	}
+	span,li{
+	  border: 2px solid blue;
+	}
+	ul{
+		display: inline-flex;/*在一些flex元素外创建一个内联框*/
+		list-style: none;
+		padding: 0;
+	}
+	.inline{
+		display: inline;
+	}
+  </style>
+ </head>
+ <body>
+	
+ </body>
+ 	<p>
+    I am a paragraph. Some of the
+		<span>words</span> have been wrapped in a
+		<span>span element</span>.
+	</p>     
+	<ul>
+	  <li>Item One</li>
+	  <li>Item Two</li>
+	  <li>Item Three</li>
+	</ul>
+	<p class="inline">I am a paragraph. A short one.</p>
+	<p class="inline">I am another paragraph. Also a short one.</p>
+    
+</html>
