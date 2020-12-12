@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>视口单位vw-vh</title>
+  <style>
+	.box{
+		border: 5px solid darkblue;
+		width: 20vw;	/*等于视口宽度的20%*/
+		height: 20vh;	/*等于视口高度的20%*/
+		font-size: 10vh;/*等于视口高度的10%*/
+	}
+  </style>
+ </head>
+ <body>
+	<h1>视口单位</h1>
+	<p>视口，即你在浏览器中看到的部分页面，也是有尺寸的。即意为视口宽度的vw单位，和意为视口高度的 vh单位。这些单位，会根据用户的视口改变大小而改变对应的值。</p>
+
+	<p>1vh=视口高度的1%，1vw=视口宽度的1%.可以用这些单位约束盒子的大小、文字的大小。在下面的示例里，有一个大小被设为20vh和20vw的盒子。这个盒子里面有一个字母A，其font-size属性被设成了10vh。</p>
+	<div class="box">
+	  A
+	</div>
+ </body>
+</html>
