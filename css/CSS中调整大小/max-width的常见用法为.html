@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>max-width尺寸常见的用法</title>
+  <style>
+	.box {
+		border: 3px solid blue;
+		width: 200px;
+	}
+	
+	.width{
+		width: 100%; /*位于比图片大的容器里，因此图片拉伸到了与容器相同的宽度；*/
+	}
+	.max{
+		max-width: 100%; /*它并没有拉伸到充满容器*/
+	}
+	.minibox{
+		border: 3px solid blue;
+		width: 50px; 
+	}
+  </style>
+ </head>
+ <body>
+	<div class="wrapper">
+	  <div class="box"><img src="images/star.png" alt="star" class="width"></div>
+	  <div class="box"><img src="images/star.png" alt="star" class="max"></div>
+	  <div class="minibox"><img src="images/star.png" alt="star" class="max"></div>
+	</div>
+	<p>我们使用了两次相同的图片:
+		<ol>
+			<li>第一次使用，属性值已设为width: 100%，位于比图片大的容器里，因此图片拉伸到了与容器相同的宽度；</li>
+			<li>第二次的属性值则设为max-width: 100%，因此它并没有拉伸到充满容器；</li>
+			<li>第三个盒子再一次包含了相同的图片，同时设定了max-width: 100%属性，这时你能看到它是怎样缩小来和盒子大小相适应的。</li>
+		</ol>
+	</p>
+    <p>这个技术是用来让图片可响应的，所以在更小的设备上浏览的时候，它们会合适地缩放。</p>
+ </body>
+</html>
