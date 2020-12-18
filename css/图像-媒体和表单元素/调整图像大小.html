@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>调整图像大小-替换元素</title>
+  <style>
+	.box{
+			border: 1px solid red;
+			width: 200px;
+	}
+	img{
+			max-width: 100%; /*这将会允许图片尺寸上小于，但不大于盒子。小的图像不变，而大的变小了，能够放在盒子里。*/
+	}
+  </style>
+ </head>
+ <body>
+	<h1>调整图像大小-怎么处理溢出问题呢？</h1>
+	<p><p>
+	<div class="wrapper">
+	  <div class="box"><img src="images/star.png" alt="star"></div>
+	  &nbsp;
+	  <div class="box"><img src="images/balloons.jpg" alt="balloons"></div>
+	</div>
+    
+ </body>
+</html>

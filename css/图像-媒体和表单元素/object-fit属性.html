@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>object-fit属性-替换元素</title>
+  <style>
+	.box {
+			border: 2px solid red;
+			width: 200px;
+			height: 200px;
+	}
+	img{
+			width: 100%;
+			height: 100%;
+	}
+	.cover{
+			object-fit: cover; /*缩小了图像，维持了图像的比例，所以图像可以整齐地充满盒子，同时由于比例保持不变，图像的一部分将会被盒子裁切掉。*/
+	}
+	.contain{
+			object-fit: contain; /*图像将会缩放到足以放到盒子里面的大小。如果它和盒子的比例不同，这将会导致“开天窗”的结果。*/
+	}
+	.fill{
+			object-fit: fill; /*可以让图像充满盒子，但是不会维持比例。*/
+	}
+	.none{
+			object-fit: none; /*被替换的内容将保持其原有的尺寸。*/
+	}
+	.scale-down{
+			object-fit: scale-down; /*内容的尺寸与 none 或 contain 中的一个相同，取决于它们两个之间,谁得到的对象尺寸会更小一些。*/
+	}
+  </style>
+ </head>
+ <body>
+	<div class="wrapper">
+	  <div class="box"><img src="images/balloons.jpg" alt="balloons" class=""></div>&nbsp;
+	  <div class="box"><img src="images/balloons.jpg" alt="balloons" class="cover"></div>&nbsp;
+	  <div class="box"><img src="images/balloons.jpg" alt="balloons" class="contain"></div>&nbsp;
+	  <div class="box"><img src="images/balloons.jpg" alt="balloons" class="fill"></div>&nbsp;
+	  <div class="box"><img src="images/balloons.jpg" alt="balloons" class="none"></div>&nbsp;
+	  <div class="box"><img src="images/balloons.jpg" alt="balloons" class="scale-down"></div>
+	</div>
+ </body>
+</html>
